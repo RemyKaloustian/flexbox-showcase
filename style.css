@@ -1,0 +1,127 @@
+@font-face {
+ font-family: "LatoHairline";
+ src: url("Lato-Hairline.ttf")
+}
+
+@font-face {
+ font-family: "LatoLight";
+ src: url("Lato-Light.ttf")
+}
+
+
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+body
+{
+    font-family: LatoHairLine;
+    margin: 0;
+    color: white;
+}
+
+
+h1
+{
+    background-color: #1C57E1;
+    color: white;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 15%;
+}
+
+.container
+{
+  margin-bottom: 10%;
+}
+
+img{
+  width:100%;
+}
+.items
+{
+    width:200px;
+    height:150px;
+    margin-left: 6px;
+    margin-top: 6px;
+    font-family:LatoLight;
+    font-size: 1.4rem;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+.items:hover
+{
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(130,130,130,1);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(130,130,130,1);
+  box-shadow: 0px 0px 24px 0px rgba(130,130,130,1);
+}
+
+/*FIRST CONTAINER */
+#container{    display:flex; }
+.item{   background-color: #4caf50; }
+
+/*SECOND CONTAINER */
+#container2{    display:flex;}
+.item2{   background-color: #8870ff;}
+.item2:first-of-type{    order:30;}
+.item2:last-of-type{    order:-1;}
+
+/*THIRD CONTAINER*/
+#container3{    display: flex;    flex-direction: row-reverse;}
+.item3{    background-color: #d33257;}
+
+
+/*THIRD1 CONTAINER*/
+#container31{    display: flex;    flex-direction: row-reverse; justify-content: flex-end;}
+.item31{    background-color: #2196f3;}
+
+/*FORTH CONTAINER*/
+
+#container4{display:flex;  flex-direction:column-reverse;}
+.item4{background-color: #f44336;}
+
+/*FIFTH CONTAINER*/
+#container5{    display: flex;    flex-direction: row-reverse;}
+.item5{    background-color: #e91e63; flex-grow:1;}
+
+/*SIXTH CONTAINER */
+#container6{    display:flex;}
+.item6{   background-color: #9c27b0; }
+.item6:nth-child(3){flex-grow: 2;}
+
+/*SEVENTH CONTAINER */
+#container7{    display:flex; flex-wrap: nowrap;}
+.item7{   background-color: #673ab7; }
+
+/*EIGHTH CONTAINER */
+#container8{    display:flex; flex-wrap: wrap;}
+.item8{   background-color: #3f51b5; }
+
+/* CONTAINER 9 */
+#container9{    display:flex; justify-content: center;}
+.item9{   background-color: #00bcd4; }
+
+#container10{    display:flex; justify-content: space-between;}
+.item10{   background-color: #009688; }
+
+#container11{    display:flex; justify-content: space-around;}
+.item11{   background-color: #ff5722; }
+
+#container12{    display:flex; justify-content: space-evenly;}
+.item12{   background-color: #795548; }
+
+#link
+{
+  color:#60646d;
+  font-family: LatoLight;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+a{
+  color:#FF3366;
+}
